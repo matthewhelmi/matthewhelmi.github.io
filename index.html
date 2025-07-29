@@ -1,1 +1,72 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Matthew Helmi – Research Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+    }
+    .project {
+      background: #fff;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-left: 4px solid #007acc;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .project-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #333;
+    }
+    .project-abstract {
+      margin: 1rem 0;
+      white-space: pre-line;
+    }
+    .project-link a {
+      color: #007acc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .project-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Research Projects</h1>
+
+  <div class="project">
+    <div class="project-title">MSc Project: Lattice Polarisation Effects in the Bandstructure of Semiconductors</div>
+    <div class="project-abstract">
+Lattice contributions to the screened Coulomb interaction (W) of the GW formalism are implemented via the dielectric function. An expression for the lattice susceptibility is derived involving the effective Born-charge. Upon inclusion of the lattice susceptibility to the total dielectric function, the conventional electronic contribution is separated from the lattice contribution. The self-energy containing the lattice contribution is solved by a contour integral, thus capturing the dynamics of the lattice effects. A close analysis is presented for the volume confinement of W in q-space, by deriving appropriate expressions in the limits of q to 0 and finite-q.
+
+The lattice corrections to GW quasi-particle eigen-energies are evaluated numerically by constructing an Atomic Simulation Recipe (ASR) Python module within GPAW. It is emphasised that singularities arise that require special treatment. An analysis of the point-summation in q-space present solutions in a high k-point density, tuning of the infinitesimal eta parameter, and integrating micro-volumes in the Brillouin-Zone.
+
+An energy mask is constructed to control the volume of q-space involved in the evaluation. The constructed ASR Python module is tested on Lithium-Fluoride. A cut-off energy of 2.0 eV is proven sufficient. This analysis also proved that inter-band matrix elements were negligible compared to intra-band matrix elements in the lattice corrections. The evaluation of the resulting band-structures presented a desired decrease in the GW band-gap. The results however also exhibited sporadic variations in the lattice corrections, which are attributed to the singularities occurring in the evaluation. The importance of the k-point density, eta value, and the effectiveness of the micro-volume integration method are presented and discussed.
+    </div>
+    <div class="project-link">
+      <a href="assets/pdf/MSc_project.pdf" target="_blank">Download MSc PDF</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title">PhD Project: Machine Learning for Assisting Atomic-Resolution Electron Microscopy</div>
+    <div class="project-abstract">
+Ph.D. research in tools for microscopists to utilise the power of deep learning neural networks to automate the analysis of high-resolution transmission electron microscopy. An investigation has been made to see whether neural networks can exceed human-level performance in seeing past noise and imperfections in the image and still extract the same quality of information, such as structural and chemical information.
+    </div>
+    <div class="project-link">
+      <a href="assets/pdf/PhD_project.pdf" target="_blank">Download PhD PDF</a>
+    </div>
+  </div>
+</body>
+</html>
