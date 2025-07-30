@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Matthew Helmi – CV, Research & Projects</title>
+  <title>Matthew Helmi – Research Projects</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,149 +13,92 @@
       line-height: 1.6;
       background-color: #f9f9f9;
     }
-
-    h1 {
+    h1, h2 {
       text-align: center;
-      margin-bottom: 2rem;
     }
-
-    .tabs-container {
-      background: white;
-      border: 1px solid #ccc;
-    }
-
-    .tabs {
-      display: flex;
-      border-bottom: 1px solid #ccc;
-    }
-
-    .tabs label {
-      flex: 1;
-      padding: 1rem;
-      text-align: center;
-      background: #eee;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    .tabs label:hover {
-      background: #ddd;
-    }
-
-    input[type="radio"] {
-      display: none;
-    }
-
-    .tab-content {
-      display: none;
-      padding: 1rem;
-    }
-
-    #tab1:checked ~ .tabs label[for="tab1"],
-    #tab2:checked ~ .tabs label[for="tab2"],
-    #tab3:checked ~ .tabs label[for="tab3"] {
-      background: white;
-      border-bottom: 2px solid white;
-    }
-
-    #tab1:checked ~ #content1,
-    #tab2:checked ~ #content2,
-    #tab3:checked ~ #content3 {
-      display: block;
-    }
-
-    .project, .paper {
+    .project {
       background: #fff;
       padding: 1.5rem;
       margin-bottom: 2rem;
       border-left: 4px solid #007acc;
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
-
-    .project-title, .paper-title {
+    .project-title {
       font-size: 1.3rem;
       font-weight: bold;
       color: #333;
     }
-
     .project-abstract {
       margin: 1rem 0;
       white-space: pre-line;
     }
-
-    .project-link a, .paper-link a {
+    .project-link a {
       color: #007acc;
       text-decoration: none;
       font-weight: bold;
     }
-
-    .project-link a:hover, .paper-link a:hover {
+    .project-link a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Matthew Helmi</h1>
+  <h1>Research Projects</h1>
 
-  <div class="tabs-container">
-    <input type="radio" name="tabs" id="tab1" checked>
-    <input type="radio" name="tabs" id="tab2">
-    <input type="radio" name="tabs" id="tab3">
-
-    <div class="tabs">
-      <label for="tab1">CV</label>
-      <label for="tab2">Research</label>
-      <label for="tab3">Projects</label>
-    </div>
-
-    <div id="content1" class="tab-content">
-      <p>Coming soon.</p>
-    </div>
-
-    <div id="content2" class="tab-content">
-      <div class="paper">
-        <div class="paper-title">Multi-scale approach to first-principles electron transport beyond 100 nm</div>
-        <div class="paper-link"><a href="https://doi.org/10.1039/C9NR00866G" target="_blank">doi:10.1039/C9NR00866G</a></div>
-      </div>
-      <div class="paper">
-        <div class="paper-title">Quantifying noise limitations of neural network segmentations in high-resolution transmission electron microscopy</div>
-        <div class="paper-link"><a href="https://doi.org/10.1016/j.ultramic.2023.113803" target="_blank">doi:10.1016/j.ultramic.2023.113803</a></div>
-      </div>
-      <div class="paper">
-        <div class="paper-title">Reconstructing the exit wave of 2D materials in high-resolution transmission electron microscopy using machine learning</div>
-        <div class="paper-link"><a href="https://doi.org/10.1016/j.ultramic.2022.113641" target="_blank">doi:10.1016/j.ultramic.2022.113641</a></div>
-      </div>
-      <div class="paper">
-        <div class="paper-title">Beam induced heating in electron microscopy modeled with machine learning interatomic potentials</div>
-        <div class="paper-link"><a href="https://doi.org/10.1039/D3NR05220F" target="_blank">doi:10.1039/D3NR05220F</a></div>
-      </div>
-      <div class="paper">
-        <div class="paper-title">Interpretability of High-Resolution Transmission Electron Microscopy Images</div>
-        <div class="paper-link"><a href="https://doi.org/10.1016/j.ultramic.2024.113997" target="_blank">doi:10.1016/j.ultramic.2024.113997</a></div>
-      </div>
-    </div>
-
-    <div id="content3" class="tab-content">
-      <div class="project">
-        <div class="project-title">MSc Project: Lattice Polarisation Effects in the Bandstructure of Semiconductors</div>
-        <div class="project-abstract">
+  <div class="project">
+    <div class="project-title">MSc Project: Lattice Polarisation Effects in the Bandstructure of Semiconductors</div>
+    <div class="project-abstract">
 Lattice contributions to the screened Coulomb interaction (W) of the GW formalism are implemented via the dielectric function...
-        </div>
-        <div class="project-link">
-          <a href="assets/pdf/MSc_project.pdf" target="_blank">Download MSc PDF</a>
-        </div>
-      </div>
+    </div>
+    <div class="project-link">
+      <a href="assets/pdf/MSc_project.pdf" target="_blank">Read PDF</a>
+    </div>
+  </div>
 
-      <div class="project">
-        <div class="project-title">PhD Project: Machine Learning for Assisting Atomic-Resolution Electron Microscopy</div>
-        <div class="project-abstract">
+  <div class="project">
+    <div class="project-title">PhD Project: Machine Learning for Assisting Atomic-Resolution Electron Microscopy</div>
+    <div class="project-abstract">
 Ph.D. research in tools for microscopists to utilise the power of deep learning neural networks to automate the analysis of high-resolution transmission electron microscopy...
-        </div>
-        <div class="project-link">
-          <a href="assets/pdf/PhD_project.pdf" target="_blank">Download PhD PDF</a>
-        </div>
-      </div>
+    </div>
+    <div class="project-link">
+      <a href="assets/pdf/PhD_project.pdf" target="_blank">Read PDF</a>
+    </div>
+  </div>
+
+  <h2>Published Research</h2>
+
+  <div class="project">
+    <div class="project-title">Multi-scale approach to first-principles electron transport beyond 100 nm</div>
+    <div class="project-link">
+      <a href="https://doi.org/10.1039/C9NR00866G" target="_blank">doi:10.1039/C9NR00866G</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title">Quantifying noise limitations of neural network segmentations in high-resolution transmission electron microscopy</div>
+    <div class="project-link">
+      <a href="https://doi.org/10.1016/j.ultramic.2023.113803" target="_blank">doi:10.1016/j.ultramic.2023.113803</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title">Reconstructing the exit wave of 2D materials in high-resolution transmission electron microscopy using machine learning</div>
+    <div class="project-link">
+      <a href="https://doi.org/10.1016/j.ultramic.2022.113641" target="_blank">doi:10.1016/j.ultramic.2022.113641</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title">Beam induced heating in electron microscopy modeled with machine learning interatomic potentials</div>
+    <div class="project-link">
+      <a href="https://doi.org/10.1039/D3NR05220F" target="_blank">doi:10.1039/D3NR05220F</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title">Interpretability of High-Resolution Transmission Electron Microscopy Images</div>
+    <div class="project-link">
+      <a href="https://doi.org/10.1016/j.ultramic.2024.113997" target="_blank">doi:10.1016/j.ultramic.2024.113997</a>
     </div>
   </div>
 </body>
